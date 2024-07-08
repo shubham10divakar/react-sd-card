@@ -1,6 +1,6 @@
 {
   "name": "react-sd-card",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "src/Card.js",
   "scripts": {
@@ -12,13 +12,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/core": "^7.24.7",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
+    "@swc/core": "^1.6.13",
     "babel-loader": "^9.1.3",
     "css-loader": "^7.1.2",
     "style-loader": "^4.0.0",
+    "swc-loader": "^0.2.6",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
   },
