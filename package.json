@@ -1,7 +1,7 @@
 {
-  "name": "sd-react-pwr",
-  "version": "1.0.8",
-  "description": "A simple react component that accepts a list of password requirements and updates each as they are fulfilled",
+  "name": "react-sd-card",
+  "version": "1.0.13",
+  "description": "React Sleek Design Card is a simple, sleek and customizable React component library for displaying cards in web applications. ",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build-storybook": "build-storybook",
     "build-lib": "rollup -c"
   },
-  "author": "SD-trial",
+  "author": "Subham Divakar",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.10",
