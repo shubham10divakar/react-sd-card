@@ -22,112 +22,39 @@ Import Card component from react-sd-card and use it in your React application:
 
 jsx
 
-// src/components/PublicationsList.js
-import React from 'react';
-import PublicationCard from './Card';
-import './PublicationsList.css';
+// App.js
+import logo from './logo.svg';
+import './App.css';
+import { Card } from 'react-sd-card';
 
-const publications = [
-  {
-    id: 1,
-    title: 'Publication 1',
-    year: 2021,
-    citations: 15,
-    imageUrl: 'path/to/image1.jpg',
-    abstract: 'Abstract of Publication 1',
-    findings: 'Findings of Publication 1',
-    details: 'Major details of Publication 1'
-  },
-  {
-    id: 2,
-    title: 'Publication 2',
-    year: 2020,
-    citations: 10,
-    imageUrl: 'path/to/image2.jpg',
-    abstract: 'Abstract of Publication 2',
-    findings: 'Findings of Publication 2',
-    details: 'Major details of Publication 2'
-  },
-  {
-    id: 2,
-    title: 'Publication 2',
-    year: 2020,
-    citations: 10,
-    imageUrl: 'path/to/image2.jpg',
-    abstract: 'Abstract of Publication 2',
-    findings: 'Findings of Publication 2',
-    details: 'Major details of Publication 2'
-  },
-  {
-    id: 2,
-    title: 'Publication 2',
-    year: 2020,
-    citations: 10,
-    imageUrl: 'path/to/image2.jpg',
-    abstract: 'Abstract of Publication 2',
-    findings: 'Findings of Publication 2',
-    details: 'Major details of Publication 2'
-  },
-  // Add more publications as needed
-];
-
-const customCardStyles = {
-  background: '#e41111',
-  margin: '20px',
-  padding: '20px',
-  borderRadius: '5px',
-  width: '300px',
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  transition: 'transform 0.3s, box-shadow 0.3s',
-  // Add more custom styles as needed
-};
-
-const PublicationsList = () => {
+function App() {
+  const publications = [
+    { id: 1, title: 'Publication 1', hdetail1: 'Year',detail1: 2021, hdetail2:'citations',detail2: 15, imageUrl: logo},
+    { id: 1, title: 'Publication 2', hdetail1: 'Year',detail1: 2022, hdetail2:'citations',detail2: 45, imageUrl: logo},
+    // Add more publications as needed
+  ];
   return (
-    <div className="publications-list">
-      <h1>My Publications</h1>
-      <div className="cards-container">
-        {publications.map((pub) => (
-          <PublicationCard 
+    <div className="App">
+      <h1>My React App</h1>
+      <div className="App">
+      {publications.map((pub) => (
+          <Card 
             key={pub.id} 
             id={pub.id} 
             title={pub.title} 
-            detail1={pub.year}
-            hdetail1='year' 
-            detail2={pub.citations}
-            hdetail2='citations'
-            detail3={pub.citations}
-            hdetail3='cit3'
-            imageUrl={pub.imageUrl}
-            textAlignment='left' 
-            // customStyles={customCardStyles}
+            detail1={pub.detail1}
+            hdetail1= {pub.hdetail1}
+            detail2={pub.detail2}
+            hdetail2= {pub.hdetail2}
+            imageUrl={pub.imageUrl} 
           />
         ))}
-      </div>
+    </div>
     </div>
   );
-};
+}
 
-export default PublicationsList;
-
-//Some basic CSS for the above 
-/* src/components/PublicationsList.css */
-
-.publications-list {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .publications-list h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+export default App;
 ```
 
 # Props
