@@ -3,6 +3,9 @@
 
 React SD Card is a simple and customizable React component library for displaying cards in web applications.Check live sample at my portfolio site (https://shubham10divakar.github.io/showcasehub/)
 
+## NPM 
+NPM Link - https://www.npmjs.com/package/react-sd-card?activeTab=readme
+
 ## Installation
 
 Install `react-sd-card` using npm or yarn:
@@ -101,3 +104,4 @@ Your feedback is important! Please share your thoughts and suggestions.
 License
 
 This project is licensed under the MIT License.
+
