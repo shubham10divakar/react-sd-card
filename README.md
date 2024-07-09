@@ -60,6 +60,12 @@ function App() {
 export default App;
 ```
 
+## Images as per above code output and some work samples
+
+![This is an alt text.](/image/1.png "This is a sample image.")
+![This is an alt text.](/image/2.png "This is a sample image.")
+
+
 # Props
 
 
