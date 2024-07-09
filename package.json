@@ -1,6 +1,6 @@
 {
   "name": "react-sd-card",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "React Sleek Design Card is a simple, sleek and customizable React component library for displaying cards in web applications. ",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -34,8 +34,8 @@
     "react-dom": "^17.0.1 || ^18.0.0"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/shubham10divakar/react-sd-card"
+    "type": "git",
+    "url": "https://github.com/shubham10divakar/react-sd-card"
   },
   "dependencies": {
     "react-router-dom": "^6.24.1"
